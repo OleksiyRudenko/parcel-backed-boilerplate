@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["console","clear","log"],"mappings":";;;;;AAAA;;AACA;;AAEAA,QAAQC,KAAR;AACAD,QAAQE,GAAR,CAAY,gBAAZ","file":"src.26339613.map","sourcesContent":["import 'normalize.css';\r\nimport 'default-beauty.css';\r\n\r\nconsole.clear();\r\nconsole.log(\"Up and running\");\r\n"]}
