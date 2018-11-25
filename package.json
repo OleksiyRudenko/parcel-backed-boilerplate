@@ -1,0 +1,25 @@
+{
+  "name": "parcel-backed-boilerplate",
+  "version": "1.0.0",
+  "description": "A parcelJS and push-dir backed boilerplate for simple vanilla JS web apps",
+  "main": "./src/index.html",
+  "repository": "https://github.com/OleksiyRudenko/parcel-backed-boilerplate.git",
+  "author": "OleksiyRudenko <oleksiy.rudenko@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build ./src/index.html --no-minify --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+  "devDependencies": {
+    "shx": "^0.3.2"
+  },
+  "dependencies": {
+    "default-beauty.css": "^0.9.0",
+    "normalize.css": "^8.0.1"
+  }
+}
